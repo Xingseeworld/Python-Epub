@@ -1,2 +1,1 @@
-# Python-Epub
-使用Python自动生成Epub文档
+用来快速生成epub文档
