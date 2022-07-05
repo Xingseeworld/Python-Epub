@@ -11,8 +11,9 @@ class Epub:
         else:
             self.filename = filename
 
-        self.filepath = filepath ?filepath:os.getcwd()
-
+        self.filepath = filepath if filepath else os.getcwd()
+    
+    @classmethod
     def create(self, filepath=None):
         epub = ZipFile(f'{self.filepath}//{self.filename}', 'w')
 
